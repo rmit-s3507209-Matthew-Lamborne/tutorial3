@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
 gem 'rails',        '5.0.1'
 gem 'puma',         '3.4.0'
 gem 'sass-rails',   '5.0.6'
@@ -36,6 +37,3 @@ end
 group :production do
   gem 'pg', '0.18.4'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
